@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+#nameTest{
+   all: initial;
+}
+</style>
+</head>
+<ul>
+  <li><a class="" href="#home">Home</a></li>
+  <lu><a class="#logo" href=""><img src="homelogo.png" alt="Magnifying glasses" height="42" width="42"></a>
+</ul>
+
+
+<h1>Online Driver (Filler name)</h1>
+<h2>please Login</h2>
+
+<form method="post" action="/">
+  First name:<br>
+  <input type="text" name="first_name" >
+  <br>
+  Last name:<br>
+  <input type="text" name="last_name">
+  <br><br>
+  Email:<br>
+  <input type="text" name="email">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3>Not a User?</h3> 
+ <input type="submit" value="SighUp">
+
+<h3>Testing for Current UserNames:</h3>
+<% users.forEach(function(user){ %>
+  <h4><%= user.first_name %> </h4>
+<%})%>
+
+
+</body>
+</html>
